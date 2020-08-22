@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.nav{
+			background-color: lightgrey;
+			color: black;
+			padding: 20px;
+		}
+		.menu-right{
+			text-align: center;
+		}
+		ul li{
+			display: inline-block;
+			margin: 20px;
+			list-style: none;
+		}
+span{
+	margin: 0 20px;
+	font-size: 28px;
+	cursor: pointer;
+	display: none;
+}
+
+@media only screen and (max-width: 700px){
+	span
+	{
+		display: block;
+
+	}
+	ul li{
+		display:block;
+	}
+
+.menu-right{
+	text-align: left;
+}
+ul{
+	display: none;
+}
+}
+
+	</style>
+
+</head>
+<body>
+	<div class="nav">
+		<div class="menu-right">
+			<span onclick="myfunction()">&#9776;</span>
+			
+		
+		<ul id="menu">
+		   <li>NEW ARRIVALS</li>
+		   <li>WOMEN</li>
+		   <li>MEN</li>
+		   <li>KIDS</li>
+		   <li>BRANDS</li>
+		   	<li>SALE</li>
+		</ul>
+	</div>
+
+
+
+
+	</div>
+	<script>
+             function myfunction()
+             {
+             	var x = document.getElementById("menu");
+
+                 if(x.style.display == "block")
+                 
+                  {
+                 	x.style.display = "none";
+                  }
+
+                  else{
+                  	x.style.display = "block";
+                  }
+
+
+
+             }
+
+	</script>
+</body>
+</html>

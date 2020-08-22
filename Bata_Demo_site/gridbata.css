@@ -1,0 +1,11 @@
+*{
+	margin: 0; padding: 0;
+	box-sizing: content-box;}
+	#container{
+	width: 90%;
+	border:1px solid red;
+	display: grid;
+	grid-template-rows: 100px 400px 556px 372px 767px 556px 700px;
+	grid-template-columns:100px 400px 556px 222px 419px 556px 700px; 
+
+}

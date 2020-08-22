@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html>
+<head><style>
+	
+<!-- SET THE MARGIN AND PADDING WHOLE WEPPAGE -->
+	
+	<style >*{margin: 0; padding: 0;  box-sizing: border-box;}
+
+
+/*create grid container which specifies rows and column */
+	main{
+			 width: 100%; height: auto; margin: 0px 
+			 auto;
+		     border:0px solid grey;
+
+
+		     display: grid;color: white;
+		     grid-template-rows: 120px 400px 30px 480px 30px 222px 30px 380px 30px 450px 30px 450px  70px;
+		      grid-template-columns: repeat(3,1fr);
+		     grid-row-gap: 5px;
+          }
+
+
+ /*header contain the logo and search-bar css */
+
+	#header{
+          	grid-column: 1/-1;
+		    grid-row-gap: 5px;
+
+		   }
+
+
+ /*menu-bar using ul and anchor tag  css*/
+ .menu-bar ul{
+ 	 	       
+ 	 	       width: 85%;
+			    height: 50px;
+			    margin: 0px auto;
+			    padding: 0px;
+
+ }
+ 
+    .menu-bar ul li{
+             	text-align: center;
+             	display: inline-block;
+             	    }
+
+    .menu-bar ul li a{
+             	text-decoration-line: none;
+             	color: black;
+                      }
+ /*create slider using animation*/
+		     	
+    #slider{
+		  
+		     grid-column: 1/-1; 
+             width: 100%;
+			 overflow:hidden;
+            }
+
+    #slidebox{
+
+			position:relative;
+			float: left;
+			width: 100%;
+            animation-name: rass;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            display: flex;
+            
+		     }
+			
+	@keyframes rass{
+
+				0%{left: 0px;}
+				20%{left: 0px;}
+				25%{left: -1665px;}
+				45%{left: -1665px;}
+				50%{left: -3330px;}
+			       
+			       }
+
+/*fall for all categories css  */
+
+.fall-for-all-text{   
+             /*background-color: lightgrey;*/
+			 grid-column: 1/-1;
+			 text-align: center;
+			 color: black;
+			  border-top: 3px solid grey;
+			  border-radius: 10px;
+			  font-size: 22px;
+
+                    }
+         
+    #fall-for-all{
+
+             /*background-color: lightgrey;*/
+
+			 grid-column: 1/-1;
+			 display: grid;
+             grid-template-columns:repeat(3,1fr);
+			 grid-column-gap: 10px;
+
+                 }
+
+
+/*fall for all image manipulation*/
+
+	#fall-for-all img{ 
+
+		       width: 100%;height:100%;
+		  	   /*padding-top: 30px*/
+		             
+		             }
+
+   .pic1{
+		   padding-left: 30px;
+	    }
+
+   .pic2{
+		   padding-right: 30px;
+		 }
+
+/*packet-friendly-store cetegories css*/
+
+.pocket-friendly-store-text{
+                               
+			                border-top: 3px solid grey;
+	                		  border-radius: 10px;
+     
+				          grid-column: 1/-1;
+				          text-align: center;
+				           color: black;
+				           font-size: 22px;
+
+                            }
+
+   #pocket-friendly-store
+                         {
+			
+			              /*background-color:lightgrey;*/
+				          grid-column: 1/-1;
+				          display: grid;
+			              grid-template-columns:repeat(4,1fr);
+			              grid-column-gap: 10px;
+		    
+		                 }
+/*pocket-for-store img manipulation*/
+
+   #pocket-friendly-store img
+	                           {
+
+		      	               width: 100%;
+		      	                height: 100%;
+		      	                /*padding-top: 30px;*/
+		                      
+		                        }
+   #pic4
+        {
+		   padding-left: 30px;
+		      
+		 }
+		        
+    #pic7{
+		   padding-right: 30px;
+		  }  
+
+/*brands-shop cetegories css    */
+
+.brands-shops-text{
+                    border-top: 3px solid grey;
+          			  border-radius: 10px;
+
+				    grid-column: 1/-1;
+				    text-align: center;
+				     color: black;
+				     font-size: 22px;
+
+             }
+
+    #brands-shop
+                 {
+			        /*background-color: lightgrey;*/
+				    grid-column: 1/-1;
+					display: grid;
+			        grid-template-columns:repeat(2,1fr);
+			        grid-column-gap: 10px;
+		         }
+
+
+/*brands-shop img manipultion   */
+
+
+    #brands-shop img
+
+                    { 	
+                    	width: 100%;
+		      	        height: 100%;
+		      	        /*padding-top: 30px;*/
+		            }
+    #pic8
+          {
+		     
+		     padding-left: 30px;
+		      
+		  }
+		        
+    #pic9
+        {
+		      	
+		    padding-right: 30px;
+		
+		}      
+
+
+/*trending-in-stores cetegories css  */
+
+.trending-in-store-text{
+                         
+			                border-top: 3px solid grey;
+			  border-radius: 10px;
+
+				          grid-column: 1/-1;
+				          text-align: center;
+				           color: black;
+				           font-size: 22px;
+
+                    }
+
+    #trending-in-stores
+                        {
+
+			              /*background-color:lightgrey;*/
+				          grid-column: 1/-1;
+		                  display: grid;
+			              grid-template-columns:repeat(3,1fr);
+			              grid-column-gap: 10px;
+           		         }
+
+ /*trending-in-stores img manipulation*/
+
+   #trending-in-stores img
+                           {
+		     	             width: 100%;
+		     	             height: 100%;
+		     	             /*padding-top: 30px;*/
+		                    
+		                    }
+         	 
+    #pic10
+           {
+		      padding-left: 30px;
+		   }
+		        
+    #pic12
+           {
+		      padding-right: 30px;
+		   }      
+		    
+
+/*the social cetegories css*/
+.social-connect-text{
+	                 border-top: 3px solid grey;
+			  border-radius: 10px;
+   
+				  grid-column: 1/-1;
+				  text-align: center;
+				   color: black;
+				   font-size: 22px;
+
+                        
+                      }
+
+    #the-social
+                {
+			      /*background-color: lightgrey;*/
+				  grid-column: 1/-1;
+				  display: grid;
+				  grid-template-columns: repeat(2,1fr);
+			      grid-column-gap: 5px;		
+		         }
+/*social icon*/
+       .icon{
+              border:2px solid black; 
+              width: 10%; 
+              border-radius: 100%; 
+              text-align:center;
+              float: left;	  
+}
+.icon:hover{
+	background-color: tomato;
+	 border:2px solid black; 
+              width: 12%; 
+              border-radius: 100%; 
+              text-align:center;	  
+
+}
+
+/*footer css */
+          
+    #footer1
+             {
+			    bacround-color: lightblue;
+				 grid-column: 1/-1;
+			 }
+
+/*search-bar*/
+		    
+    input 
+            {
+		    	height: 40px;
+		    	width: 300px;
+		    }
+
+	#rass{
+		    font-size: 18px;
+		    /*padding: 35px;*/
+		    /*margin: 70px;*/
+
+		  }
+
+		          
+         
+</style>
+   <link rel="stylesheet"   href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"/>
+	
+</head>
+<body>
+	<main>
+    <div id="header">
+
+	<center><table border="0" width="70%">
+
+			<tr>
+				 <th align="right"><img src="logo10.png" width="170px"></th>
+                 <th align="left"><input type="text" placeholder="search here products"></th>
+			</tr>	
+			
+ </table></center>
+
+<!-- menu-bar -->
+		
+   <div class="menu-bar">
+
+   	<center>
+
+    <ul>
+	
+	<li><a href="#">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNEW ARIVALS&nbsp&nbsp&nbsp</a>
+
+</li>
+				
+
+	   <li><a href="#">WOMEN&nbsp&nbsp&nbsp</a></li>
+	   <li><a href="#">MEN&nbsp&nbsp&nbsp</a></li>
+	   <li><a href="#">KIDS&nbsp&nbsp&nbsp</a></li>
+	   <li><a href="#">BRANDS&nbsp&nbsp&nbsp</a></li>
+	   <li><a href="#">SALE&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a></li>
+	   <li><a href="#">TRACK ORDER&nbsp&nbsp&nbsp</a></li>
+	   <li><a href="#"> MY CART&nbsp&nbsp&nbsp</a></li>
+	   <li style="border-left: 2px solid black;padding-left: 3px;"><a href="#">SIGN IN&nbsp&nbsp&nbsp&nbsp</a></li>
+	   <li style="border-left: 2px solid black; padding-left: 3px;"><a href="#">SIGN UP</a></li>
+	
+	</ul>
+
+    </center>
+		
+   </div>
+</div>
+
+<!-- slider -->
+
+   <div id="slider">
+	        
+	    <div id="slidebox">
+	    	 <img src="rass32.jfif">
+              <img src="rass2.jpg">
+              <img src="rass33.jpg">
+              <img src="rass1.jpg">
+		     
+
+        </div>
+    </div>
+
+
+<!-- fall for all section -->
+
+     <div class="fall-for-all-text">FALL FOR ALL</div>
+
+	
+       <div id="fall-for-all">	
+		          
+	    <div class="pic1">
+	  	   <img src="pic1.jpg">
+	   </div>
+	
+	       <img src="pic2.jpg">
+							          
+	   <div class="pic2">
+		<img src="pic3.jpg">
+	   </div>
+     </div>
+
+
+
+<!-- pocket-friendly-store -->
+	
+<div class="pocket-friendly-store-text">POCKET FOR FRIENDLY STORE</div>	
+
+  <div id="pocket-friendly-store">
+
+     <div id="pic4">
+	 	<img src="pic4.jpg">
+	 </div>
+	
+	 <img src="pic5.jpg">
+							
+	 <img src="pic6.jpg">
+							
+	 <div id="pic7">
+
+	 	<img src="pic7.jpg">
+
+	 </div>
+ </div>
+         
+<!-- brands-shop -->
+
+ <div class="brands-shops-text">BRANDS SHOPS</div>
+
+		
+ <div id="brands-shop">
+		
+	<div id="pic8">
+
+		<img src="pic8.jpg">
+
+	</div>
+					
+	<div id="pic9">		
+		<img src="pic9.jpg">
+	</div>
+	
+</div>
+
+<!-- trending-in-stores -->
+
+
+<div class="trending-in-store-text">TRENDING IN STORE</div>
+
+		
+<div id="trending-in-stores">
+				
+	<div id="pic10">
+
+		<img src="pic10.jpg">
+	</div>
+	
+	<img src="pic11.jpg">
+	
+	<div id="pic12">
+
+	<img src="pic12.jpg">
+
+    </div>
+
+</div>
+		   <!-- the-social -->
+		     <div class="social-connect-text">THE SOCIAL CONNECT</div>
+
+		
+  <div id="the-social"> 
+
+<!-- YOUTUBE VIDEO -->
+ 	
+
+  	 <iframe width="600" height="320" src="https://www.youtube.com/embed/AdZyWXXcjpA" frameborder="0" allow="
+  	          accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+  	 	
+  	 </iframe>
+
+<!-- form -->
+
+ <div id="form">
+
+ 	<div style="color: black;">
+
+ 		<H2>SIGN UP TO NEWSLATTER</H2><BR>
+		Be the first to know about our latest collections and offers<br><br>
+	  
+
+	<input type="email" placeholder="email address">
+
+	</div><br><br>
+	  
+
+    <input type="submit" value="SUBSCRIBE" style="background-color: red; color: white; font-size: 20px; width: 30%"><br><br>
+
+<!-- social icon -->
+
+	<h2 style="color: black;">KEEP IN TOUCH</h2><BR>
+	  <div class="icon" >
+	 <a href="#" style="font-size: 40px; ">
+	 <i class="fa fa-facebook"></i>
+	  </a></div>
+		 
+	<div class="icon">	    	  	 
+	 <a href="#" style="font-size: 35px;">
+	  	  	<i class="fab fa-instagram"></i></a></div>
+	  	  	<!-- <i class="fab fa-twitter"></i></a>           -->
+	  </div>
+	</div>
+		
+
+<!-- footer -->
+
+        
+   <div id="footer1" style="background-color: grey; color: white;">
+   	<center>COPYRIGHT &copy 2020 BATA INDIA LIMITED. &nbsp&nbspCIN: L19201WB1931PLC007261<br><br>
+   	<a href="#">SIGN UP FOR AFFILIATE PROGRAM</a></center>
+   </div>
+
+           
+
+   </main>
+</body>
+</html>																																					
